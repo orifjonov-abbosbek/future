@@ -720,6 +720,8 @@
   }
 
   .shop {
+    padding-bottom: 20px;
+    overflow-x: hidden;
     h2 {
       width: 65%;
       font-style: normal;
@@ -730,7 +732,9 @@
     }
 
     .results {
+      width: 100%;
       .card {
+        width: 80%;
         b {
           font-size: 70px;
         }
