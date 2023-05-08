@@ -1,10 +1,15 @@
 import React from "react";
 import Bap from "../../assets/herobgres.png";
 import Bird from "../../assets/bird.png";
-import child from '../../assets/children.svg';
-import teen from '../../assets/teen.svg';
-import elder from '../../assets/elder.svg';
-import playms from '../../assets/playms.png';
+import child from "../../assets/children.svg";
+import teen from "../../assets/teen.svg";
+import elder from "../../assets/elder.svg";
+import rightarr from "../../assets/rightarr.svg";
+import playms from "../../assets/playms.png";
+import monitor from "../../assets/monitor.svg";
+import diagram from "../../assets/diagram.svg";
+import news from "../../assets/newspaper.svg";
+import contentlogo from "../../assets/contentlogo.svg";
 import "./Home.scss";
 
 const Home = () => {
@@ -90,6 +95,84 @@ const Home = () => {
                 Актуальные знания от признанных экспертов рынка для новичков и
                 практикующих специалистов.
               </h2>
+
+              <div className="results">
+                <div className="card">
+                  <b>600</b>
+                  <p>Курсов</p>
+                </div>
+                <div className="card">
+                  <b>82</b>
+                  <p>
+                    Ведущих <br /> преподавателей
+                  </p>
+                </div>
+                <div className="card">
+                  <b>14 795</b>
+                  <p>Выпускников</p>
+                </div>
+              </div>
+
+              <div className="result_content">
+                <div className="first_card">
+                  <div className="first">
+                    <b>25</b>
+                    <p> ноябрь</p>
+                  </div>
+
+                  <div className="second">
+                    <h4>День открытых дверей </h4>
+                    <p>
+                      Приглашаем всех желающих на бесплатную экскурсию в мир
+                      востребованных профессий и полезных навыков
+                    </p>
+                  </div>
+                  <button>
+                    Записаться <img src={rightarr} alt="" />
+                  </button>
+                </div>
+
+                <div className="second_content">
+                  <div className="first">
+                    <img src={monitor} alt="" />
+                    <h3>Программы обучения</h3>
+                    <p>
+                      В списке наших курсов вы сможете найти профессию и занятие
+                      по душе, изучить новое и получить практические знания,
+                      которые помогут получить работу мечты.
+                    </p>
+                    <button className="second_button">
+                      Подробнее <img src={rightarr} alt="" />
+                    </button>
+                  </div>
+                 <div className="wrapper">
+
+                  <div className="second">
+                    <div className="first_card">
+                      <img src={news} alt="" />
+                      <p>Новости Академии</p>
+                    </div>
+
+                    <div className="second_card">
+                      <img src={diagram} alt="" />
+                      <p>Мир IT</p>
+                    </div>
+                  </div>
+
+                <div className="third_card">
+                  <img src={contentlogo} alt="" />
+
+                  <div className="third_card_content">
+                    <h3>Попробуй!</h3>
+                    <p>
+                      Пройдите тест и узнайте свои способности в сфере
+                      информационных технологий
+                    </p>
+                  </div>
+                 </div>
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
