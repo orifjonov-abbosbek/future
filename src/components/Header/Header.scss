@@ -1,0 +1,130 @@
+@import "../../base.scss";
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .header__nav_list {
+    width: 485px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    .header__nav_list_item {
+      display: flex;
+      column-gap: 6px;
+      font-size: 14px;
+      line-height: 17px;
+
+      align-items: center;
+      color: #000000;
+    }
+  }
+
+  .header__info_box {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    .selected {
+      width: 160px;
+      display: flex;
+      column-gap: 0.5rem;
+      font-size: 14px;
+      line-height: 17px;
+      align-items: center;
+      text-decoration-line: underline;
+
+      color: #000000;
+
+      cursor: pointer;
+      position: relative;
+
+      .arrow {
+        transform: rotate(180deg);
+      }
+
+      &:active {
+        .arrow {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .selected:active .options {
+      display: block;
+    }
+
+    .options {
+      display: block;
+      position: absolute;
+      top: 40px;
+      cursor: pointer;
+
+      li {
+        width: 200px;
+        display: flex;
+        column-gap: 5px;
+        margin-bottom: 5px;
+
+        label {
+          font-size: 14px;
+          line-height: 17px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+        }
+      }
+    }
+    .open {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      cursor: pointer;
+    }
+
+    .telnum {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #00093c;
+    }
+    .regbtn {
+      background-color: transparent;
+      border: none;
+      column-gap: 8px;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #000000;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .header {
+    background-color: #00093c;
+    .header__wrapper {
+      .logo path {
+        fill: #fff;
+      }
+      .header__nav {
+        display: none;
+      }
+      .header__info_box {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  }
+}
