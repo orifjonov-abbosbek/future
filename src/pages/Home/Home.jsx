@@ -8,8 +8,17 @@ import rightarr from "../../assets/rightarr.svg";
 import playms from "../../assets/playms.png";
 import monitor from "../../assets/monitor.svg";
 import diagram from "../../assets/diagram.svg";
+import star from "../../assets/star.png";
 import news from "../../assets/newspaper.svg";
+import usr1 from "../../assets/usr1.png";
+import usr2 from "../../assets/usr2.png";
+import usr3 from "../../assets/usr3.png";
+import card1 from "../../assets/card1.png";
+import book from "../../assets/book.png";
+import desk from "../../assets/desk.png";
+import boy from "../../assets/boy.png";
 import contentlogo from "../../assets/contentlogo.svg";
+import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 
 const Home = () => {
@@ -145,38 +154,186 @@ const Home = () => {
                       Подробнее <img src={rightarr} alt="" />
                     </button>
                   </div>
-                 <div className="wrapper">
+                  <div className="wrapper">
+                    <div className="second">
+                      <div className="first_card">
+                        <img src={news} alt="" />
+                        <p>Новости Академии</p>
+                      </div>
 
-                  <div className="second">
-                    <div className="first_card">
-                      <img src={news} alt="" />
-                      <p>Новости Академии</p>
+                      <div className="second_card">
+                        <img src={diagram} alt="" />
+                        <p>Мир IT</p>
+                      </div>
                     </div>
 
-                    <div className="second_card">
-                      <img src={diagram} alt="" />
-                      <p>Мир IT</p>
+                    <div className="third_card">
+                      <img src={contentlogo} alt="" />
+
+                      <div className="third_card_content">
+                        <h3>Попробуй!</h3>
+                        <p>
+                          Пройдите тест и узнайте свои способности в сфере
+                          информационных технологий
+                        </p>
+                      </div>
                     </div>
                   </div>
-
-                <div className="third_card">
-                  <img src={contentlogo} alt="" />
-
-                  <div className="third_card_content">
-                    <h3>Попробуй!</h3>
-                    <p>
-                      Пройдите тест и узнайте свои способности в сфере
-                      информационных технологий
-                    </p>
-                  </div>
-                 </div>
-                </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section className="feedback">
+          <div className="feedback__wrapper">
+            <h2>Отзывы наших студентов</h2>
+
+            <ul className="card_list">
+              <li className="card_list_item">
+                <div className="top">
+                  <img src={usr1} alt="" />
+                  <div className="">
+                    <h3>Имя Фамилия</h3>
+                    <p>Студент курса «WEB-разработчик»</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div className="mark">
+                  <img src={star} alt="" />
+                  <p>4,87 / 5</p>
+                </div>
+              </li>
+              <li className="card_list_item">
+                <div className="top">
+                  <img src={usr2} alt="" />
+                  <div className="">
+                    <h3>Имя Фамилия</h3>
+                    <p>Студент курса «WEB-разработчик»</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius.
+                </p>
+                <div className="mark">
+                  <img src={star} alt="" />
+                  <p>4,87 / 5</p>
+                </div>
+              </li>
+              <li className="card_list_item">
+                <div className="top">
+                  <img src={usr3} alt="" />
+                  <div className="">
+                    <h3>Имя Фамилия</h3>
+                    <p>Студент курса «WEB-разработчик»</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div className="mark">
+                  <img src={star} alt="" />
+                  <p>4,87 / 5</p>
+                </div>
+              </li>
+              <li className="card_list_item">
+                <div className="top">
+                  <img src={usr3} alt="" />
+                  <div className="">
+                    <h3>Имя Фамилия</h3>
+                    <p>Студент курса «WEB-разработчик»</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div className="mark">
+                  <img src={star} alt="" />
+                  <p>4,87 / 5</p>
+                </div>
+              </li>
+              <li className="card_list_item">
+                <div className="top">
+                  <img src={usr3} alt="" />
+                  <div className="">
+                    <h3>Имя Фамилия</h3>
+                    <p>Студент курса «WEB-разработчик»</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div className="mark">
+                  <img src={star} alt="" />
+                  <p>4,87 / 5</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="welcome">
+          <div className="container">
+            <div className="welcome__wrapper">
+              <h2>Добро пожаловать в Академию будущего ХОД</h2>
+
+              <ul className="welcome_cad_list">
+                <li className="welcome_card_list_item">
+                  <img src={card1} alt="" />
+
+                  <p>
+                    Передовой подход к образовательному <br /> процессу
+                  </p>
+                </li>
+
+                <li className="welcome_card_list_item">
+                  <img src={book} alt="" />
+
+                  <p>Непрерывное усовершенствование и пополнение базы курсов</p>
+                </li>
+
+                <li className="welcome_card_list_item">
+                  <img src={desk} alt="" />
+
+                  <p>Непрерывное усовершенствование и пополнение базы курсов</p>
+                </li>
+                <li className="welcome_card_list_item">
+                  <img src={boy} alt="" />
+
+                  <p>Непрерывное усовершенствование и пополнение базы курсов</p>
+                </li>
+              </ul>
+
+              
+
+
+
+
+
+
+              
+            </div>
+          </div>
+        </section>
       </main>
+
+      <Footer />
     </>
   );
 };
