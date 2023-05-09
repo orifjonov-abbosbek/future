@@ -14,6 +14,34 @@ const Footer = () => {
       <footer className="footer">
         <div className="container">
           <div className="footer__wrapper">
+            <div className="register_sec">
+              <img className="footerbird" src={Bird} alt="" />
+
+              <div className="footer_desc">
+                <h2>Помочь с выбором?</h2>
+                <p>
+                  Оставьте заявку и наши специалисты свяжутся с вами, ответят на
+                  все вопросы и подберут подходящий вариант обучения.
+                </p>
+              </div>
+
+              <div className="refister_form">
+                <input type="text" placeholder="Ваше имя" />
+                <div className="inside_form">
+                  <input type="text" placeholder="Ваш телефон" />
+                  <input type="text" placeholder="Ваш e-mail" />
+                </div>
+                <div className="submit_sec">
+                  <p>
+                    Нажимая на кнопку, я соглашаюсь на обработку персональных
+                    данных и с правилами пользования Платформой
+                  </p>
+
+                  <button>Отправить</button>
+                </div>
+              </div>
+            </div>
+
             <ul className="footer_card1">
               <li className="footer_card1_item">
                 <a>
@@ -89,34 +117,6 @@ const Footer = () => {
               <li className="footer_card2_item">Карьера</li>
               <li className="footer_card2_item">Контакты</li>
             </ul>
-
-            <div className="register_sec">
-              <img className="footerbird" src={Bird} alt="" />
-
-              <div className="footer_desc">
-                <h2>Помочь с выбором?</h2>
-                <p>
-                  Оставьте заявку и наши специалисты свяжутся с вами, ответят на
-                  все вопросы и подберут подходящий вариант обучения.
-                </p>
-              </div>
-
-              <div className="refister_form">
-                <input type="text" placeholder="Ваше имя" />
-                <div className="inside_form">
-                  <input type="text" placeholder="Ваш телефон" />
-                  <input type="text" placeholder="Ваш e-mail" />
-                </div>
-                <div className="submit_sec">
-                  <p>
-                    Нажимая на кнопку, я соглашаюсь на обработку персональных
-                    данных и с правилами пользования Платформой
-                  </p>
-
-                  <button>Отправить</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </footer>

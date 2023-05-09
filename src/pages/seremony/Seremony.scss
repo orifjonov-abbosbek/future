@@ -95,6 +95,7 @@
         align-items: center;
         padding: 47px 31px 60px 27px;
         background-image: url("../../assets/iboyblur.png");
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
 
@@ -162,6 +163,7 @@
 @media (max-width: $breakpoint-medium) {
 
   .seremony{
+    padding-bottom: 600px;
 
       .first_card {
         flex-direction: column;

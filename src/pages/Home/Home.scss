@@ -596,6 +596,13 @@
       }
     }
   }
+
+   .welcome{
+    padding-bottom: 600px;
+     .welcome_cad_list{
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-small) {
@@ -759,6 +766,13 @@
           }
         }
       }
+    }
+  }
+   .welcome{
+    padding-bottom: 600px;
+
+    .welcome_cad_list{
+      flex-wrap: wrap;
     }
   }
 }
@@ -928,6 +942,14 @@
           }
         }
       }
+    }
+  }
+
+  .welcome{
+    padding-bottom: 600px;
+
+     .welcome_cad_list{
+      flex-direction: column;
     }
   }
 }
