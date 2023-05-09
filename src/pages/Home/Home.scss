@@ -762,6 +762,7 @@
   }
   .welcome {
     padding-bottom: 600px;
+    overflow: hidden;
 
     .welcome_cad_list {
       flex-wrap: wrap;
@@ -947,6 +948,7 @@
 
   .welcome {
     padding-bottom: 600px;
+    overflow: hidden;
 
     .welcome_cad_list {
       flex-direction: column;
