@@ -462,14 +462,6 @@
         }
       }
     }
-
-
-
-
-
-
-
-
   }
 }
 
@@ -597,9 +589,9 @@
     }
   }
 
-   .welcome{
+  .welcome {
     padding-bottom: 600px;
-     .welcome_cad_list{
+    .welcome_cad_list {
       flex-direction: column;
     }
   }
@@ -768,11 +760,19 @@
       }
     }
   }
-   .welcome{
+  .welcome {
     padding-bottom: 600px;
 
-    .welcome_cad_list{
+    .welcome_cad_list {
       flex-wrap: wrap;
+    }
+  }
+
+  .feedback {
+    .feedback__wrapper {
+      .card_list {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -945,10 +945,10 @@
     }
   }
 
-  .welcome{
+  .welcome {
     padding-bottom: 600px;
 
-     .welcome_cad_list{
+    .welcome_cad_list {
       flex-direction: column;
     }
   }
