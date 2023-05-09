@@ -113,7 +113,11 @@ const Header = () => {
                     <img src={All} alt="" /> Все курсы
                   </Link>
                 </li>
-                <li className="header__nav_list_item">Мероприятия</li>
+                <li className="header__nav_list_item">
+                  <Link className="header__nav_list_item" to="/seremony">
+                    Мероприятия
+                  </Link>
+                </li>
                 <li className="header__nav_list_item">Базы знаний</li>
                 <li className="header__nav_list_item">Карьера</li>
               </ul>
