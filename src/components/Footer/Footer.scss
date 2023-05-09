@@ -254,13 +254,8 @@
 }
 
 @media (max-width: $breakpoint-small) {
-
-  .footer{
-
-
-    .footer__wrapper{
-
-
+  .footer {
+    .footer__wrapper {
       .register_sec {
         width: 100%;
         flex-direction: column;
@@ -270,6 +265,23 @@
         right: 0;
         position: absolute;
         top: -777px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    .footer__wrapper {
+      .register_sec {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 60px;
+        row-gap: 20px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: -677px;
       }
     }
   }
