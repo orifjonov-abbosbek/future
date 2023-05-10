@@ -120,84 +120,25 @@
     z-index: 999;
     transition: right 0.5s ease-in-out;
 
-
-      .header__info_box {
-    display: flex;
-    align-items: center;
-    column-gap: 40px;
-    .selected {
-      width: 160px;
+    
+    .selected{
       display: flex;
-      column-gap: 0.5rem;
-      font-size: 14px;
-      line-height: 17px;
-      align-items: center;
-      text-decoration-line: underline;
-
-      color: #000000;
-
+      column-gap: 5px;
       cursor: pointer;
-      position: relative;
-
-      .arrow {
-        transform: rotate(180deg);
-      }
-
-      &:active {
-        .arrow {
-          transform: rotate(0);
-        }
-      }
+      margin-top: 20px;
     }
 
-    .selected:active .options {
-      display: block;
-    }
-
-    .options {
-      display: block;
-      position: absolute;
-      top: 40px;
-      cursor: pointer;
-
-      li {
-        width: 200px;
-        display: flex;
-        column-gap: 5px;
-        margin-bottom: 5px;
-
-        label {
-          font-size: 14px;
-          line-height: 17px;
-          display: flex;
-          align-items: center;
-          color: #000000;
-        }
-      }
-    }
-    .open {
+    .options{
       display: none;
-      cursor: pointer;
     }
 
-    .telnum {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 26px;
-      color: #00093c;
-    }
-    .regbtn {
-      background-color: transparent;
-      border: none;
-      column-gap: 8px;
-      font-size: 14px;
-      line-height: 17px;
+    .regbtn{
       display: flex;
       align-items: center;
-      cursor: pointer;
-      color: #000000;
+      column-gap: 10px;
+      padding: 0;
+      margin-top: 20px;
     }
-  }
 
     &.open {
       right: 0;
@@ -206,7 +147,7 @@
 
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 10px;
       margin: 0;
     }
 

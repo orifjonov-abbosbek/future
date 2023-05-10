@@ -7,6 +7,7 @@ import yt from "../../assets/yt.svg";
 import Bird from "../../assets/bird.png";
 import tg from "../../assets/tg.svg";
 import logo from "../../assets/footerlogo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -115,7 +116,9 @@ const Footer = () => {
               <li className="footer_card2_item">Новости</li>
               <li className="footer_card2_item">База знаний</li>
               <li className="footer_card2_item">Карьера</li>
-              <li className="footer_card2_item">Контакты</li>
+              <li className="footer_card2_item">
+                <Link className="links" to="/contact">Контакты</Link>
+              </li>
             </ul>
           </div>
         </div>

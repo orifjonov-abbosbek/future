@@ -1,0 +1,116 @@
+@import "../../base.scss";
+
+.contact {
+  padding-top: 19px;
+  padding-bottom: 300px;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  &__wrapper {
+    display: flex;
+
+    iframe{
+        display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      li {
+        img {
+          display: block;
+          margin-bottom: 10px;
+        }
+        .tel {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          color: #000000;
+        }
+
+        a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 26px;
+          color: #000000;
+        }
+        address {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 26px;
+          color: #000000;
+        }
+
+        .social_links {
+          display: flex;
+          column-gap: 20px;
+        }
+        button {
+          border: none;
+          width: 116px;
+          height: 30.43px;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    .right_side {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        display: block;
+        max-width: 882px;
+        height: 410px;
+        border: none;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $breakpoint-medium) {
+
+    .contact{
+        padding-bottom: 600px ;
+
+        &__wrapper{
+            flex-direction: column;
+            iframe{
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .left_side{
+                display: flex;
+              justify-content: center;
+            }
+
+            .right_side{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact{
+        padding-bottom: 700px;
+    }
+}

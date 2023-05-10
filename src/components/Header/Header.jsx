@@ -220,7 +220,7 @@ const Header = () => {
 
                   <span className="selected" onClick={handleSelectClick}>
                     <img src={Loc} alt="" />
-                    {selectedOption}
+                    Нижний Новгород
                     <img className={isOpen ? "arrow" : ""} src={Arr} alt="" />
                   </span>
 
@@ -258,6 +258,11 @@ const Header = () => {
                       </li>
                     </ul>
                   </div>
+
+                  <Link className="regbtn" to="/register">
+                    <img src={Usr} alt="" />
+                    Войти
+                  </Link>
                 </li>
               </ul>
             </nav>
