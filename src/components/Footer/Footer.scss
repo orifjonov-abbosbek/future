@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   padding-top: 70px;
+  padding-bottom: 50px;
   position: relative;
 
   &__wrapper {
@@ -188,7 +189,9 @@
 @media (max-width: $breakpoint-medium) {
   .footer {
     position: relative;
+    display: flex;
     &__wrapper {
+      justify-content: center;
       .footer_card2 {
         display: none;
       }

@@ -84,8 +84,8 @@ const Seremony = () => {
                 </li>
 
                 <li className="card_list_item">
-                  <div className="">
-                    <img src={iboy} alt="" />
+                  <div className="iboy">
+                    <img className="iboy" src={iboy} alt="" />
                   </div>
                   <div className="">
                     <p>Встреча</p>

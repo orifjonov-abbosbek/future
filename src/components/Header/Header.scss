@@ -106,6 +106,8 @@
 
   .hamburger {
     display: none;
+    background-color: #00093c;
+    position: unset;
   }
 
   .sidebar {
@@ -117,7 +119,85 @@
     background-color: #fff;
     z-index: 999;
     transition: right 0.5s ease-in-out;
-    
+
+
+      .header__info_box {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    .selected {
+      width: 160px;
+      display: flex;
+      column-gap: 0.5rem;
+      font-size: 14px;
+      line-height: 17px;
+      align-items: center;
+      text-decoration-line: underline;
+
+      color: #000000;
+
+      cursor: pointer;
+      position: relative;
+
+      .arrow {
+        transform: rotate(180deg);
+      }
+
+      &:active {
+        .arrow {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .selected:active .options {
+      display: block;
+    }
+
+    .options {
+      display: block;
+      position: absolute;
+      top: 40px;
+      cursor: pointer;
+
+      li {
+        width: 200px;
+        display: flex;
+        column-gap: 5px;
+        margin-bottom: 5px;
+
+        label {
+          font-size: 14px;
+          line-height: 17px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+        }
+      }
+    }
+    .open {
+      display: none;
+      cursor: pointer;
+    }
+
+    .telnum {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #00093c;
+    }
+    .regbtn {
+      background-color: transparent;
+      border: none;
+      column-gap: 8px;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #000000;
+    }
+  }
 
     &.open {
       right: 0;
@@ -128,17 +208,15 @@
       list-style: none;
       padding: 0;
       margin: 0;
-     
-  
-
     }
 
     li {
       margin: 10px 0;
     }
 
-    a {
-      display: block;
+    .link {
+      display: flex;
+      column-gap: 10px;
       padding: 10px;
       color: #333;
       text-decoration: none;
@@ -146,28 +224,13 @@
   }
 
   .hamburger {
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
+    &:first-child {
+      transform: translateY(-6px);
+    }
 
- 
-
-
-      &:first-child {
-        transform: translateY(-6px);
-      }
-
-      &:last-child {
-        transform: translateY(6px);
-        }
-        
+    &:last-child {
+      transform: translateY(6px);
+    }
 
     & ~ .sidebar.open &__line:first-child {
       transform: translateY(6px) rotate(45deg);
@@ -182,7 +245,7 @@
     }
   }
 
-  button{
+  button {
     display: none;
   }
 }
@@ -207,7 +270,7 @@
       }
     }
 
-    button{
+    button {
       display: block;
       border: none;
     }
@@ -232,10 +295,9 @@
       .hamburger {
         display: block;
       }
-      
     }
 
-    button{
+    button {
       border: none;
     }
   }

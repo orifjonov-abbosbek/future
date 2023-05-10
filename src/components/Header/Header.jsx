@@ -4,7 +4,7 @@ import Ham from "../../assets/hamburger.svg";
 import Loc from "../../assets/location.svg";
 import Arr from "../../assets/arrow.svg";
 import Usr from "../../assets/usr.svg";
-import close from '../../assets/close.svg';
+import close from "../../assets/close.svg";
 import "./Header.scss";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
@@ -137,6 +137,7 @@ const Header = () => {
                 {selectedOption}
                 <img className={isOpen ? "arrow" : ""} src={Arr} alt="" />
               </span>
+
               <div className={`custom-select ${isOpen ? "open" : "options"}`}>
                 <ul className="options">
                   <li>
@@ -181,10 +182,15 @@ const Header = () => {
                 Войти
               </button>
             </div>
-            <button onClick={handleNavToggle}>
+
+            <span onClick={handleNavToggle}>
               {isNavOpen ? (
                 <img
-                  style={{ background: "#00093c", width: '40px', height: '40px'}}
+                  style={{
+                    background: "#00093c",
+                    width: "40px",
+                    height: "40px",
+                  }}
                   className="close"
                   src={close}
                   alt=""
@@ -192,21 +198,66 @@ const Header = () => {
               ) : (
                 <img className="hamburger" src={Ham} alt="" />
               )}
-            </button>
-
+            </span>
             <nav className={`sidebar ${isNavOpen ? "open" : ""}`}>
               <ul>
                 <li>
-                  <a href="/">Home</a>
-                </li>
-                <li>
-                  <a href="/about">About</a>
-                </li>
-                <li>
-                  <a href="/services">Services</a>
-                </li>
-                <li>
-                  <a href="/contact">Contact</a>
+                  <Link className="link" to="/">
+                    <img src={All} alt="" />
+                    Все курсы
+                  </Link>
+                  <Link className="link" to="/">
+                    Home
+                  </Link>
+
+                  <Link to="/about">Об академии</Link>
+                  <Link to="/seremony">Мероприятия</Link>
+                  <Link to="/news">Новости</Link>
+
+                  <Link to="/Базазнаний">База знаний</Link>
+                  <Link to="/Карьера">Карьера</Link>
+                  <Link to="/contact">Контакты</Link>
+
+                  <span className="selected" onClick={handleSelectClick}>
+                    <img src={Loc} alt="" />
+                    {selectedOption}
+                    <img className={isOpen ? "arrow" : ""} src={Arr} alt="" />
+                  </span>
+
+                  <div className={`custom-select ${isOpen ? "open" : ""}`}>
+                    <ul className="options">
+                      <li>
+                        <input
+                          type="radio"
+                          id="option1"
+                          name="option"
+                          value="НижнийНовгород"
+                          onChange={handleOptionSelect}
+                        />
+                        <label htmlFor="option1">Нижний Новгород</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="option2"
+                          name="option"
+                          value="Дзержинск"
+                          onChange={handleOptionSelect}
+                        />
+                        <label htmlFor="option2">Дзержинск</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="option3"
+                          name="option"
+                          value="On-line"
+                          onChange={handleOptionSelect}
+                        />
+                        <label htmlFor="option3">On-line</label>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>

@@ -161,26 +161,37 @@
 }
 
 @media (max-width: $breakpoint-medium) {
-
-  .seremony{
+  .seremony {
     padding-bottom: 600px;
 
-      .first_card {
-        flex-direction: column;
-        .second {
-    
-          p {
-            width: 410px;
-            text-align: center;
-          }
+    .first_card {
+      flex-direction: column;
+      .second {
+        h5 {
+          width: 105%;
+          text-align: center;
         }
-      }
 
-
-      .card_list{
-        .card_list_item{
-            width: 100%;
+        p {
+          width: 100%;
+          text-align: center;
         }
       }
     }
-  }  
+
+    .card_list {
+      .card_list_item {
+        width: 100%;
+
+        &:nth-child(4) {
+          flex-direction: column;
+          padding: 0;
+          .iboy {
+            width: 100%;
+            border-top-right-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
