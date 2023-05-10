@@ -5,20 +5,27 @@ import Loc from "../../assets/location.svg";
 import Arr from "../../assets/arrow.svg";
 import Usr from "../../assets/usr.svg";
 import "./Header.scss";
-import { Link } from 'react-router-dom';
-
+import "./sidebar.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-   const [selectedOption, setSelectedOption] = useState("Select an option");    
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const [selectedOption, setSelectedOption] = useState("Select an option");
 
   const handleSelectClick = () => {
     setIsOpen(!isOpen);
   };
 
-    const handleOptionSelect = (event) => {
-      setSelectedOption(event.target.value);
-    };
+  const handleOptionSelect = (event) => {
+    setSelectedOption(event.target.value);
+  };
 
   return (
     <>
@@ -173,7 +180,27 @@ const Header = () => {
                 Войти
               </button>
             </div>
-            <img className="hamburger" src={Ham} alt="" />
+
+            <button onClick={handleNavToggle}>
+              <img className="hamburger" src={Ham} alt="" />
+            </button>
+
+            <nav className={`sidebar ${isNavOpen ? "open" : ""}`}>
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <a href="/services">Services</a>
+                </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

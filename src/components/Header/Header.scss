@@ -1,6 +1,5 @@
 @import "../../base.scss";
 
-
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -108,12 +107,88 @@
   .hamburger {
     display: none;
   }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    background-color: #fff;
+    z-index: 999;
+    transition: right 0.5s ease-in-out;
+
+    &.open {
+      right: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    &__line {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 0 auto;
+      background-color: #333;
+      transition: transform 0.3s ease-in-out;
+
+      &:first-child {
+        transform: translateY(-6px);
+      }
+
+      &:last-child {
+        transform: translateY(6px);
+      }
+    }
+
+    & ~ .sidebar.open &__line:first-child {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    & ~ .sidebar.open &__line:last-child {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    & ~ .sidebar.open &__line:nth-child(2) {
+      opacity: 0;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-medium) {
   .header {
     background-color: #00093c;
     .header__wrapper {
+      display: flex;
+      align-items: center;
       .logo path {
         fill: #fff;
       }
@@ -126,6 +201,37 @@
       .hamburger {
         display: block;
       }
+    }
+
+    button{
+      border: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .header {
+    background-color: #00093c;
+    .header__wrapper {
+      display: flex;
+      align-items: center;
+      .logo path {
+        fill: #fff;
+      }
+      .header__nav {
+        display: none;
+      }
+      .header__info_box {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+      
+    }
+
+    button{
+      border: none;
     }
   }
 }
