@@ -4,6 +4,7 @@ import Ham from "../../assets/hamburger.svg";
 import Loc from "../../assets/location.svg";
 import Arr from "../../assets/arrow.svg";
 import Usr from "../../assets/usr.svg";
+import close from '../../assets/close.svg';
 import "./Header.scss";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
@@ -180,9 +181,17 @@ const Header = () => {
                 Войти
               </button>
             </div>
-
             <button onClick={handleNavToggle}>
-              <img className="hamburger" src={Ham} alt="" />
+              {isNavOpen ? (
+                <img
+                  style={{ background: "#00093c", width: '40px', height: '40px'}}
+                  className="close"
+                  src={close}
+                  alt=""
+                />
+              ) : (
+                <img className="hamburger" src={Ham} alt="" />
+              )}
             </button>
 
             <nav className={`sidebar ${isNavOpen ? "open" : ""}`}>
