@@ -186,105 +186,107 @@ const Home = () => {
         </section>
 
         <section className="feedback">
-          <div className="feedback__wrapper">
-            <h2>Отзывы наших студентов</h2>
+          <div className="container">
+            <div className="feedback__wrapper">
+              <h2>Отзывы наших студентов</h2>
 
-            <ul className="card_list">
-              <li className="card_list_item">
-                <div className="top">
-                  <img src={usr1} alt="" />
-                  <div className="">
-                    <h3>Имя Фамилия</h3>
-                    <p>Студент курса «WEB-разработчик»</p>
+              <ul className="card_list">
+                <li className="card_list_item">
+                  <div className="top">
+                    <img src={usr1} alt="" />
+                    <div className="">
+                      <h3>Имя Фамилия</h3>
+                      <p>Студент курса «WEB-разработчик»</p>
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  feugiat nisl at augue dapibus, id tristique lorem placerat.
-                  Curabitur pellentesque est bibendum urna facilisis varius. In
-                  hac habitasse platea dictumst. In ut dui sodales.
-                </p>
-                <div className="mark">
-                  <img src={star} alt="" />
-                  <p>4,87 / 5</p>
-                </div>
-              </li>
-              <li className="card_list_item">
-                <div className="top">
-                  <img src={usr2} alt="" />
-                  <div className="">
-                    <h3>Имя Фамилия</h3>
-                    <p>Студент курса «WEB-разработчик»</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </p>
+                  <div className="mark">
+                    <img src={star} alt="" />
+                    <p>4,87 / 5</p>
                   </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  feugiat nisl at augue dapibus, id tristique lorem placerat.
-                  Curabitur pellentesque est bibendum urna facilisis varius.
-                </p>
-                <div className="mark">
-                  <img src={star} alt="" />
-                  <p>4,87 / 5</p>
-                </div>
-              </li>
-              <li className="card_list_item">
-                <div className="top">
-                  <img src={usr3} alt="" />
-                  <div className="">
-                    <h3>Имя Фамилия</h3>
-                    <p>Студент курса «WEB-разработчик»</p>
+                </li>
+                <li className="card_list_item">
+                  <div className="top">
+                    <img src={usr2} alt="" />
+                    <div className="">
+                      <h3>Имя Фамилия</h3>
+                      <p>Студент курса «WEB-разработчик»</p>
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  feugiat nisl at augue dapibus, id tristique lorem placerat.
-                  Curabitur pellentesque est bibendum urna facilisis varius. In
-                  hac habitasse platea dictumst. In ut dui sodales.
-                </p>
-                <div className="mark">
-                  <img src={star} alt="" />
-                  <p>4,87 / 5</p>
-                </div>
-              </li>
-              <li className="card_list_item">
-                <div className="top">
-                  <img src={usr3} alt="" />
-                  <div className="">
-                    <h3>Имя Фамилия</h3>
-                    <p>Студент курса «WEB-разработчик»</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                  </p>
+                  <div className="mark">
+                    <img src={star} alt="" />
+                    <p>4,87 / 5</p>
                   </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  feugiat nisl at augue dapibus, id tristique lorem placerat.
-                  Curabitur pellentesque est bibendum urna facilisis varius. In
-                  hac habitasse platea dictumst. In ut dui sodales.
-                </p>
-                <div className="mark">
-                  <img src={star} alt="" />
-                  <p>4,87 / 5</p>
-                </div>
-              </li>
-              <li className="card_list_item">
-                <div className="top">
-                  <img src={usr3} alt="" />
-                  <div className="">
-                    <h3>Имя Фамилия</h3>
-                    <p>Студент курса «WEB-разработчик»</p>
+                </li>
+                <li className="card_list_item">
+                  <div className="top">
+                    <img src={usr3} alt="" />
+                    <div className="">
+                      <h3>Имя Фамилия</h3>
+                      <p>Студент курса «WEB-разработчик»</p>
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  feugiat nisl at augue dapibus, id tristique lorem placerat.
-                  Curabitur pellentesque est bibendum urna facilisis varius. In
-                  hac habitasse platea dictumst. In ut dui sodales.
-                </p>
-                <div className="mark">
-                  <img src={star} alt="" />
-                  <p>4,87 / 5</p>
-                </div>
-              </li>
-            </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </p>
+                  <div className="mark">
+                    <img src={star} alt="" />
+                    <p>4,87 / 5</p>
+                  </div>
+                </li>
+                <li className="card_list_item">
+                  <div className="top">
+                    <img src={usr3} alt="" />
+                    <div className="">
+                      <h3>Имя Фамилия</h3>
+                      <p>Студент курса «WEB-разработчик»</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </p>
+                  <div className="mark">
+                    <img src={star} alt="" />
+                    <p>4,87 / 5</p>
+                  </div>
+                </li>
+                <li className="card_list_item">
+                  <div className="top">
+                    <img src={usr3} alt="" />
+                    <div className="">
+                      <h3>Имя Фамилия</h3>
+                      <p>Студент курса «WEB-разработчик»</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </p>
+                  <div className="mark">
+                    <img src={star} alt="" />
+                    <p>4,87 / 5</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -319,15 +321,6 @@ const Home = () => {
                   <p>Непрерывное усовершенствование и пополнение базы курсов</p>
                 </li>
               </ul>
-
-              
-
-
-
-
-
-
-              
             </div>
           </div>
         </section>
