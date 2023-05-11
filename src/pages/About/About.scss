@@ -1,0 +1,82 @@
+@import "../../base.scss";
+
+.hero {
+  &__wrapper {
+
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: #ffffff;
+      margin-bottom: 41px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+}
+
+.intro {
+  padding-top: 100px;
+  padding-bottom: 216px;
+
+  &__wrapper {
+    display: flex;
+    column-gap: 30px;
+    .about__desc {
+      width: 260px;
+      height: 180px;
+      position: relative;
+      border-radius: 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      padding: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        z-index: -1;
+        background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+        border-radius: 20px;
+      }
+
+      h2 {
+        width: 240px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        color: #000000;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+      img {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+
+    ul{
+        li{
+
+
+            p{
+                width: 246px;
+            }
+        }
+    }
+  }
+}
