@@ -18,6 +18,7 @@ import mobilegame from "../../assets/mobilegame.png";
 import it from "../../assets/it.png";
 import playtime from "../../assets/playtime.svg";
 import Footer from "../../components/Footer/Footer";
+import herobgres from '../../assets/herobgres.png';
 
 import "./About.scss";
 
@@ -25,6 +26,7 @@ const About = () => {
   return (
     <main>
       <section className="hero">
+        <img className="resimg" src={herobgres} alt="" />
         <div className="container">
           <div className="hero__wrapper">
             <h2>
@@ -34,6 +36,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       <section className="intro">
         <div className="container">
           <div className="intro__wrapper">
