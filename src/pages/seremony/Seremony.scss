@@ -162,7 +162,7 @@
 
 @media (max-width: $breakpoint-medium) {
   .seremony {
-    padding-bottom: 650px;
+    padding-bottom: 600px;
 
     .first_card {
       flex-direction: column;
@@ -196,3 +196,8 @@
   }
 }
 
+@media (max-width: 400px) {
+  .seremony{
+    padding-bottom: 650px;
+  }
+}
