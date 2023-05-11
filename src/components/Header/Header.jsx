@@ -202,7 +202,7 @@ const Header = () => {
             <nav className={`sidebar ${isNavOpen ? "open" : ""}`}>
               <ul>
                 <li>
-                  <Link className="link" to="/">
+                  <Link className="link" to="/all">
                     <img src={All} alt="" />
                     Все курсы
                   </Link>
